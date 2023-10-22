@@ -149,10 +149,6 @@ elementInfo.name
 }</a></td>
     </tr>
     <tr>
-        <th>Số hiệu nguyên tử</th>
-        <td>${elementInfo.number}</td>
-    </tr>
-    <tr>
         <th>Phát hiện</th>
         <td>${capitalize(
           handleMissing(elementInfo.discovered_by)
@@ -189,12 +185,6 @@ elementInfo.name
     <tr>
         <th>Độ nóng chảy</th>
         <td>${handleMissingNumber(elementInfo.melt, "K")}</td>
-    </tr>
-    <tr>
-        <th>Cấu hình electron</th>
-        <td>${handleMissing(
-          elementInfo.electron_configuration
-        )}</td>
     </tr>
 </table>
 <table>
