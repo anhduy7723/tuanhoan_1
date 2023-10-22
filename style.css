@@ -92,13 +92,14 @@ th {
   position: absolute;
   left: 0;
   right: 0;
-  top: 0;
+  top: 20px; /* Thay đổi giá trị này để di chuyển card lên phía trên */
   bottom: 0;
   margin: auto;
   font-size: var(--cardfontsize);
   border-radius: 10px;
   gap: 10px;
 }
+
 
 .card > div {
   gap: 10px;
@@ -247,7 +248,7 @@ th {
 
 .image {
   position: absolute;
-  top:120px;
+  top:100px;
   left: 50%;
   transform: translate(-50%, 0);
   margin-top: 1%;
