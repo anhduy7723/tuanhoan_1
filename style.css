@@ -206,7 +206,7 @@ th {
 
 .btn-outline-primary {
   position: absolute;
-  top:40px;
+  top:60px;
   left: 50%;
   transform: translate(-50%, 0);
   margin-top: 1%;
@@ -247,7 +247,7 @@ th {
 
 .image {
   position: absolute;
-  top: 80px;
+  top:100px;
   left: 50%;
   transform: translate(-50%, 0);
   margin-top: 1%;
