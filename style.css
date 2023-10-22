@@ -206,7 +206,7 @@ th {
 
 .btn-outline-primary {
   position: absolute;
-  top: 44px;
+  top: 42px;
   left: 50%;
   transform: translate(-50%, 0);
   margin-top: 1%;
@@ -216,15 +216,15 @@ th {
   vertical-align: middle;
   user-select: none;
   border: 1px solid transparent;
-  padding: 8px 20px;
-  font-size: 1.5rem;
-  line-height: 1.5;
+  padding: 6px 16px;
+  font-size: 1.2rem;
+  line-height: 1.2;
   font-weight: bold;
   color: #007bff;
   border-color: #007bff;
   text-decoration: none;
   background-color: transparent;
-  border-radius: 10px;
+  border-radius: 8px;
   transition: transform 0.1s ease;
   z-index: 9999;
 }
