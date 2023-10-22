@@ -206,7 +206,7 @@ th {
 
 .btn-outline-primary {
   position: absolute;
-  top: 42px;
+  top:40px;
   left: 50%;
   transform: translate(-50%, 0);
   margin-top: 1%;
@@ -237,19 +237,17 @@ th {
 
 .table-category {
   position: absolute;
-  top: 210px;
+  top: 170px;
   left: 45%;
   transform: translate(-50%, 0);
   margin-top: 5%;
   width: 740px;
   height: 150px;
-  display: flex;
-  justify-content: space-evenly;
 }
 
 .image {
   position: absolute;
-  top: 100px;
+  top: 82px;
   left: 50%;
   transform: translate(-50%, 0);
   margin-top: 1%;
