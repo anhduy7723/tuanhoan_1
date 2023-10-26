@@ -305,3 +305,24 @@ th {
 .down {
   margin-top: -15px;
 }
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 896px) 
+  and (-webkit-device-pixel-ratio: 2) {
+  /* Write your CSS adjustments here for iPhone 11 */
+}
+
+/* For Samsung J7 */
+@media only screen 
+  and (min-device-width: 360px) 
+  and (max-device-width: 720px) 
+  and (-webkit-device-pixel-ratio: 3) {
+  /* Write your CSS adjustments here for Samsung J7 */
+}
+
+/* General responsive adjustments */
+@media only screen and (max-width: 768px) {
+  /* Write your general responsive CSS adjustments here */
+}
+
