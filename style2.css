@@ -291,25 +291,25 @@ th {
 }
 
 .table-category .item-table .axit::before {
-    color: #FF5733;
+    background-color: #FF5733;
     position: absolute;
-    left: 0;
+    left: 10px;
 }
 
 .table-category .item-table .bazo::before {
-    color: #66FF25;
+    background-color: #66FF25;
     position: absolute;
-    left: 0;
+    left: 10px;
 }
 
 .table-category .item-table .salt::before {
-    color: #A9A9A9;
+    background-color: #A9A9A9;
     position: absolute;
-    left: 0;
+    left: 10px;
 }
 
 .table-category .item-table .oxit::before {
-    color: #00FFFF;
+    background-color: #00FFFF;
     position: absolute;
-    left: 0;
+    left: 10px;
 }
