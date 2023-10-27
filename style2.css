@@ -282,7 +282,7 @@ th {
   font-size: 18px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   list-style: none;
 }
 
