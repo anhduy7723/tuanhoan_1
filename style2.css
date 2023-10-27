@@ -263,7 +263,7 @@ th {
   top: 220px;
   left: 45%;
   transform: translate(-50%, 0);
-  margin-top: 5%;
+ /* margin-top: 5%;*/
   width: 740px;
   height: 150px;
   display: flex;
