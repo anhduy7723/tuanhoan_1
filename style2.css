@@ -283,7 +283,7 @@ th {
     content: "\f111";
     font-family: FontAwesome;
     display: inline-block;
-    width: 50px;
+    width: 10px;
   }
 .axit::before{
     background-color:#FF5733;
