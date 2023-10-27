@@ -284,6 +284,7 @@ th {
     font-family: FontAwesome;
     display: inline-block;
     width: 10px;
+    height:10px;
   }
 .axit::before{
     background-color:#FF5733;
