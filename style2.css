@@ -267,8 +267,8 @@ th {
     color: #fff;
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    list-style-type: circle;
+    gap: 4px;
+    list-style: none;
   }
   
   .table-category .item-table ul {
