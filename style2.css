@@ -299,7 +299,7 @@ th {
 .table-category .item-table .bazo::before {
     background-color: #66FF25;
     position: absolute;
-    left: 10px;
+    right: 15px;
 }
 
 .table-category .item-table .salt::before {
