@@ -280,7 +280,7 @@ th {
     padding-left: var(--icon-space);
   }
   
-  .table-category .item-table li:before {
+  .table-category .item-table li::before {
     content: "\f111";
     font-family: FontAwesome;
     display: inline-block;
