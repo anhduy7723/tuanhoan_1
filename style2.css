@@ -305,14 +305,6 @@ th {
   margin-top: 1%;
   font-size: 30px;
 }
-.table-category .item-table li:before{
-  content: "\f111";
-  font-family: FontAwesome;
-  display: inline-block;
-  margin-left: calc(var(--icon-space) * -1);
- 
-  width: 20px;
-}
 
 .item-table li.axit::before {
   content: "\f111";
@@ -320,7 +312,6 @@ th {
   display: inline-block;
   margin-left: calc(var(--icon-space) * -1);
   width: 12px;
-  margin-top:5px;
   height:14px;
   background-color: #3A8D3A;
 }
