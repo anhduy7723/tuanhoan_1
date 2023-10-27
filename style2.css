@@ -285,9 +285,11 @@ th {
   display: inline-block;
   margin-left: calc(var(--icon-space) * -1);
   width: 20px;
+  height: 20px; /* Thêm chiều cao để tạo hình tròn */
+  text-align: center; /* Căn giữa biểu tượng */
+  line-height: 20px; /* Giữ biểu tượng ở giữa theo chiều dọc */
+  border-radius: 50%; /* Tạo hình tròn cho biểu tượng */
 }
-
-  
 .axit::before{
     color:#FF5733;
 }
