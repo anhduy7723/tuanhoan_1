@@ -264,7 +264,6 @@ th {
   
   .table-category .item-table {
     font-size: 18px;
-    color: #fff;
     display: flex;
     flex-direction: column;
     gap: 10px;
