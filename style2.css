@@ -319,7 +319,8 @@ th {
   font-family: FontAwesome;
   display: inline-block;
   margin-left: calc(var(--icon-space) * -1);
-  width: 10px;
+  width: 12px;
+  height:auto;
   background-color: #3A8D3A;
 }
 
