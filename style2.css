@@ -285,7 +285,7 @@ th {
     font-family: FontAwesome;
     display: inline-block;
     margin-left: calc(var(--icon-space) * -1);
-    margin-top:calc(var(--icon-space) * -1);
+    margin-top:5px;
     width: 10px;
     height: 15px;
 }
