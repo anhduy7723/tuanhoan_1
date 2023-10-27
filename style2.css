@@ -276,33 +276,40 @@ th {
     padding: 0;
 }
 
-.table-category .item-table li {
-    padding-left: var(--icon-space);
-}
-
 .table-category .item-table li::before {
     content: "\f111";
     font-family: FontAwesome;
     display: inline-block;
     margin-left: calc(var(--icon-space) * -1);
-    margin-top:5px;
     width: 10px;
     height: 15px;
 }
 
+.table-category .item-table li {
+    padding-left: var(--icon-space);
+    position: relative;
+}
+
 .table-category .item-table .axit::before {
-    background-color: #FF5733;
+    color: #FF5733;
+    position: absolute;
+    left: 0;
 }
 
 .table-category .item-table .bazo::before {
-    background-color: #66FF25;
+    color: #66FF25;
+    position: absolute;
+    left: 0;
 }
 
 .table-category .item-table .salt::before {
-    background-color: #A9A9A9;
+    color: #A9A9A9;
+    position: absolute;
+    left: 0;
 }
 
 .table-category .item-table .oxit::before {
-    background-color: #00FFFF;
+    color: #00FFFF;
+    position: absolute;
+    left: 0;
 }
-
