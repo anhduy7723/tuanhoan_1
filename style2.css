@@ -307,7 +307,7 @@ th {
 }
 
 .item-table li.axit::before {
-  content: "\f111";
+  content: "";
   font-family: FontAwesome;
   display: inline-block;
   margin-left: calc(var(--icon-space) * -1);
