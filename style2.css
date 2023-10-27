@@ -5,7 +5,7 @@
 
 :root {
   /* Layout */
-  --elementsize: 62px;
+  --elementsize: 100px;
   --elementpadding: 5px;
   --elementfont: consolas;
   --elementfontsize: 10px;
@@ -315,8 +315,8 @@ th {
 }
 
 
-.pk::before{
-  color:#3A8D3A;
+.axit::before{
+  background-color:#3A8D3A;
 }
 
 .kimloai::before{
