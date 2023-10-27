@@ -311,6 +311,10 @@ th {
   font-family: FontAwesome;
   display: inline-block;
   margin-left: calc(var(--icon-space) * -1);
+  margin-top: calc(var(--icon-space) * -1);
+  margin-right: calc(var(--icon-space) * -1);
+  margin-bottom: calc(var(--icon-space) * -1);
+
   width: 20px;
 }
 
