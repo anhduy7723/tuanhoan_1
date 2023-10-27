@@ -303,14 +303,9 @@ th {
   }
   
   .table-category .item-table li:before {
-    content: "\f111";
-    font-family: FontAwesome;
-    display: inline-block;
-    margin-left: calc(var(--icon-space) * -1);
-    width: 20px;
+    content: "\f111";   font-family: FontAwesome;   display: inline-block;   margin-left: calc(var(--icon-space) * -1);   width: 20px;
   }
   
- 
   
 .axit::before{
     color:#FF5733;
