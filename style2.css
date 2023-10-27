@@ -320,7 +320,7 @@ th {
   display: inline-block;
   margin-left: calc(var(--icon-space) * -1);
   width: 12px;
-  padding-top:3px;
+  padding-top:-5px;
   height:14px;
   background-color: #3A8D3A;
 }
