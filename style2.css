@@ -284,7 +284,6 @@ th {
     content: "\f111";
     font-family: FontAwesome;
     display: inline-block;
-    margin-left: calc(var(--icon-space) * -1);
     width: 10px;
     height: 15px;
   }
