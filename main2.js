@@ -2,8 +2,8 @@ var btnPage = document.getElementById("btn-page");
 const categoryColors = {
   "ion":"#ff00ff",
   "bazo":"#66FF25",
-  "oxit":"#C57D1E",
-  "axit":"#C04839",
+  "oxit": "#00FFFF", 
+  "axit": "#FF5733", 
   "salt":"#FFFFFF"
   // Add more categories and colors as needed
 };
