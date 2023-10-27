@@ -311,17 +311,19 @@ th {
   font-family: FontAwesome;
   display: inline-block;
   margin-left: calc(var(--icon-space) * -1);
-  margin-top: calc(var(--icon-space) * -1);
-  margin-right: calc(var(--icon-space) * -1);
-  margin-bottom: calc(var(--icon-space) * -1);
-
+ 
   width: 20px;
 }
 
-
-.axit::before{
-  background-color:#3A8D3A;
+.item-table li.axit::before {
+  content: "\f111";
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: calc(var(--icon-space) * -1);
+  width: 20px;
+  background-color: #3A8D3A;
 }
+
 
 .kimloai::before{
   color: #237ACC;
