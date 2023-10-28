@@ -85,21 +85,28 @@ function createElementDiv(element, target, color) {
     atomicmass = Number(atomicmass).toFixed(2);
   }
 
-  let symbolSize = "35px"; // Kích thước chữ mặc định
+  let symbolSize = "35px"; // Default font size
   if (element === "57-71" || element === "89-103") {
-    symbolSize = "15px"; // Kích thước chữ cho 2 phần tử này sẽ nhỏ hơn
+    symbolSize = "15px"; // Smaller font size for these elements
+  }
+
+  let atomicAndMassDiv = '';
+  if (element !== "57-71" && element !== "89-103") {
+    atomicAndMassDiv = `
+      <div class="flex-row element_info">
+          <div>${atomicnumber}</div>
+          <div>${atomicmass}u</div>
+      </div>
+    `;
   }
 
   let eleDiv = `
     <div class="${category} element flex-col flex-center" style="background: ${colors}">
-    <div class="flex-row element_info">
-        <div>${atomicnumber}</div>
-        <div>${atomicmass}u</div>
+      ${atomicAndMassDiv}
+      <div class="symbol" translate="no" style="font-size: ${symbolSize};">${symbol}</div>
+      <div>${name}</div>
     </div>
-    <div class="symbol" translate="no" style="font-size: ${symbolSize};">${symbol}</div>
-    <div>${name}</div>
-    </div>
-    `;
+  `;
 
   target.insertAdjacentHTML("beforeend", eleDiv);
 }
@@ -148,10 +155,6 @@ function getElementInfo(elementObj, color) {
   }</a></td>
                 </tr>
                 <tr>
-                    <th style="color:black;">Số hiệu nguyên tử</th>
-                    <td>${elementInfo.number}</td>
-                </tr>
-                <tr>
                     <th style="color:black; >Phát hiện</th>
                     <td>${capitalize(
                       handleMissing(elementInfo.discovered_by)
@@ -165,13 +168,6 @@ function getElementInfo(elementObj, color) {
                     <th style="color:black;>Vẻ bề ngoài</th>
                     <td>${capitalize(
                       handleMissing(elementInfo.appearance)
-                    )}</td>
-                </tr>
-                <tr>
-                    <th style="color:black;>Khối lượng nguyên tử</th>
-                    <td>${handleMissingNumber(
-                      elementInfo.atomic_mass,
-                      "u"
                     )}</td>
                 </tr>
                 <tr>
@@ -213,6 +209,7 @@ function getElementInfo(elementObj, color) {
     periodicTable.classList.remove("unclickable");
   }, 1000);
 }
+
 
 
 periodicTable = document.querySelector(".table");
