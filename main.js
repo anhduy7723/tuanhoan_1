@@ -85,19 +85,25 @@ function createElementDiv(element, target, color) {
     atomicmass = Number(atomicmass).toFixed(2);
   }
 
+  let symbolSize = "35px"; // Kích thước chữ mặc định
+  if (element === "57-71" || element === "89-103") {
+    symbolSize = "15px"; // Kích thước chữ cho 2 phần tử này sẽ nhỏ hơn
+  }
+
   let eleDiv = `
     <div class="${category} element flex-col flex-center" style="background: ${colors}">
     <div class="flex-row element_info">
         <div>${atomicnumber}</div>
         <div>${atomicmass}u</div>
     </div>
-    <div class="symbol" translate="no">${symbol}</div>
+    <div class="symbol" translate="no" style="font-size: ${symbolSize};">${symbol}</div>
     <div>${name}</div>
     </div>
     `;
 
   target.insertAdjacentHTML("beforeend", eleDiv);
 }
+
 
 function removeCard() {
   if (cardIsShowing()) {
@@ -112,6 +118,14 @@ function removeCard() {
 }
 
 function getElementInfo(elementObj, color) {
+  // Check if the element id is "57-71" or "89-103" and the class is "green"
+  if (
+    (elementObj.id === "57-71" && elementObj.classList.contains("green")) ||
+    (elementObj.id === "89-103" && elementObj.classList.contains("green"))
+  ) {
+    return; // Do not display the card for these elements
+  }
+
   // if theres already a card
   removeCard();
   btnPage.style.zIndex = -1;
@@ -199,6 +213,7 @@ function getElementInfo(elementObj, color) {
     periodicTable.classList.remove("unclickable");
   }, 1000);
 }
+
 
 periodicTable = document.querySelector(".table");
 body = document.getElementsByTagName("body")[0];
