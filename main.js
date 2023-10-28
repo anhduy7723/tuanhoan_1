@@ -130,10 +130,9 @@ function getElementInfo(elementObj, color) {
     (elementObj.id === "57-71" && elementObj.classList.contains("green")) ||
     (elementObj.id === "89-103" && elementObj.classList.contains("green"))
   ) {
-    return; // Do not display the card for these elements
+    return;
   }
 
-  // if theres already a card
   removeCard();
   btnPage.style.zIndex = -1;
   let elementInfo = findElementByName(data.elements, "name", elementObj.id)[0];
@@ -149,51 +148,62 @@ function getElementInfo(elementObj, color) {
         <div class="flex-col">
             <table>
                 <tr>
-                    <th style="color:black;">Tên</th>
-                    <td><a target="_blank" style="color:white;" href="${elementInfo.source}">${
+                    <th style="color: black;">Tên</th>
+                    <td><a target="_blank" style="color:#000;" href="${elementInfo.source}">${
     elementInfo.name
   }</a></td>
                 </tr>
                 <tr>
-                    <th style="color:black; >Phát hiện</th>
+                    <th style="color: black;">Số hiệu nguyên tử</th>
+                    <td>${elementInfo.number}</td>
+                </tr>
+                <tr>
+                    <th style="color: black;">Phát hiện</th>
                     <td>${capitalize(
                       handleMissing(elementInfo.discovered_by)
                     )}</td>
                 </tr>
                 <tr>
-                    <th style="color:black;>Được đặt tên bởi</th>
+                    <th style="color: black;">Được đặt tên bởi</th>
                     <td> ${capitalize(handleMissing(elementInfo.named_by))}</td>
                 </tr>
                 <tr>
-                    <th style="color:black;>Vẻ bề ngoài</th>
+                    <th style="color: black;">Vẻ bề ngoài</th>
                     <td>${capitalize(
                       handleMissing(elementInfo.appearance)
                     )}</td>
                 </tr>
                 <tr>
-                    <th style="color:black;>Điểm sôi</th>
+                    <th style="color: black;">Khối lượng nguyên tử</th>
+                    <td>${handleMissingNumber(
+                      elementInfo.atomic_mass,
+                      "u"
+                    )}</td>
+                </tr>
+                <tr>
+                    <th style="color: black;">Điểm sôi</th>
                     <td>${handleMissingNumber(elementInfo.boil, "K")}</td>
                 </tr>
                 <tr>
-                    <th style="color:black;>Tỉ trọng</th>
+                    <th style="color: black;">Tỉ trọng</th>
                     <td>${handleMissingNumber(
                       elementInfo.density,
                       "kg/m³"
                     )}</td>
                 </tr>
                 <tr>
-                    <th style="color:black;>Độ nóng chảy</th>
+                    <th style="color: black;">Độ nóng chảy</th>
                     <td>${handleMissingNumber(elementInfo.melt, "K")}</td>
                 </tr>
                 <tr>
-                    <th style="color:black;>Cấu hình electron</th>
+                    <th style="color: black;">Cấu hình electron</th>
                     <td>${handleMissing(
                       elementInfo.electron_configuration
                     )}</td>
                 </tr>
             </table>
             <table>
-                <th style="text-align: center; color:black">Bản tóm tắt</th>
+                <th style="color: black;" style="text-align: center">Bản tóm tắt</th>
                 <tr>
                     <td>${elementInfo.summary}</td>
                 </tr>     
@@ -209,6 +219,7 @@ function getElementInfo(elementObj, color) {
     periodicTable.classList.remove("unclickable");
   }, 1000);
 }
+
 
 
 
